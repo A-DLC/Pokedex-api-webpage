@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./img/5.png" />
+
+    <title>Información</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="./css/info.css" />
+  </head>
+  <body onload="PK()">
+    <br />
+
+    <div class="container-fluid" style="border: solid">
+      <div class="row">
+        <div class="col-med-6" style="">
+          <h2 id="name"></h2>
+          <b>Type: </b> <span id="tipo"></span> <br /><br />
+          <b>Abilities: </b> <span id="ab"></span> <br /><br />
+          <b>Height: </b> <span id="alt"></span> <br /><br />
+          <b>Weight: </b> <span id="peso"></span> <br /><br />
+        </div>
+
+        <div class="col-md-2" style="border-right: solid"></div>
+
+        <div class="col-md-4">
+          <h3 style="align: center">Weaknesses:</h3>
+          <ul id="weak1"></ul>
+          <ul id="weak2"></ul>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <div
+      class="container-fluid"
+      style="border-bottom: double; border-top: double"
+    >
+      <div class="row">
+        <div class="col-med-4" style="border-right: solid; border-left: solid">
+          <br />
+          <h4>Default Form - Shiny version</h4>
+          <br />
+          <img id="mas" />
+          <img id="mas2" />
+          <img id="mas3" />
+          <img id="mas4" />
+        </div>
+
+        <div class="col-med-4">
+          <br />
+          <h4 id="fem"></h4>
+          <br />
+          <img id="fem1" />
+          <img id="fem2" />
+          <img id="fem3" />
+          <img id="fem4" />
+          <!-- Esto no se verá a menos de que el pokemon tenga difentes sprites en su versión femenina.
+ -->
+        </div>
+      </div>
+    </div>
+
+    <div></div>
+    <hr />
+    <br />
+    <div class="container" style="justify-content: center">
+      <table id="stats" border="2" style="align-self: center">
+        <caption>
+          BASE STATS
+        </caption>
+        <tr>
+          <td>
+            <label>HP</label>
+          </td>
+          <td>
+            <label>ATTACK</label>
+          </td>
+          <td>
+            <label>DEFENSE</label>
+          </td>
+          <td>
+            <label>SPECIAL ATTACK</label>
+          </td>
+          <td>
+            <label>SPECIAL DEFENSE</label>
+          </td>
+          <td>
+            <label>SPEED</label>
+          </td>
+        </tr>
+      </table>
+      <br /><br />
+
+      <table id="cuadro" border="3">
+        <caption>
+          MOVES
+        </caption>
+        <tr>
+          <td>
+            <label>Name</label>
+          </td>
+          <td>
+            <label>Power</label>
+          </td>
+          <td>
+            <label>Accuracy</label>
+          </td>
+          <td>
+            <label>PP</label>
+          </td>
+          <td>
+            <label>Type</label>
+          </td>
+          <td>
+            <label>Class</label>
+          </td>
+        </tr>
+      </table>
+      <br />
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      Back to top
+    </button>
+    <br />
+
+    <script src="./scripts/lib/axios.min.js"></script>
+    <script src="./scripts/info.js"></script>
+  </body>
+</html>
